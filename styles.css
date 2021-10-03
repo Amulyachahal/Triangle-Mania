@@ -81,6 +81,7 @@ body {
   font-size: 1.2rem;
   border-radius: 15%;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
+  cursor: pointer;
   /* position: inherit; */
 }
 
@@ -112,6 +113,7 @@ body {
   color: white;
   border-radius: 15%;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
+  cursor: pointer;
 }
 
 #btn-check:hover,
@@ -127,6 +129,7 @@ body {
   color: white;
   font-size: 1.2rem;
   border-radius: 15%;
+  cursor: pointer;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -151,6 +154,7 @@ body {
   color: white;
   border-radius: 15%;
   font-size: 1.2rem;
+  cursor: pointer;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 #area-btn:hover,
