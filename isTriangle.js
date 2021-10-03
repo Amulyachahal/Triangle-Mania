@@ -6,16 +6,22 @@ const check = () => {
   const angle1 = Number(inputAngle[0].value);
   const angle2 = Number(inputAngle[1].value);
   const angle3 = Number(inputAngle[2].value);
-  const sum = angle1 + angle2 + angle3;
-  if (sum === 180) {
-    console.log("ok triangle");
-    output.innerText = "is triangle";
+  // console.log(Math.sign(angle1));
+  if (angle1 < 0) {
+    output.innerText = "Angle-1 cannot be negative";
+  } else if (angle2 < 0) {
+    output.innerText = "Angle-2 cannot be negative";
+  } else if (angle3 < 0) {
+    output.innerText = "Angle-3 cannot be negative";
   } else {
-    output.innerText = "Not a Triangle";
+    const sum = angle1 + angle2 + angle3;
+
+    if (sum === 180) {
+      output.innerText = "Is triangle";
+    } else {
+      output.innerText = "Not a Triangle";
+    }
   }
 };
 
-const checkTriangle = () => {
-  check();
-};
-button.addEventListener("click", checkTriangle);
+button.addEventListener("click", check);

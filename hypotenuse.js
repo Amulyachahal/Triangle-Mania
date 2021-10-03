@@ -12,8 +12,9 @@ const calculateHypotenuse = () => {
     Number(sides[0].value),
     Number(sides[1].value)
   );
-  const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-  output.innerText = "The length of hypotenuse is " + lengthOfHypotenuse;
+  const lengthOfHypotenuse = Math.trunc(Math.sqrt(sumOfSquares));
+  output.innerText =
+    "The length of hypotenuse is " + lengthOfHypotenuse + " (Truncated value)";
 };
 
 hypotenuseBtn.addEventListener("click", calculateHypotenuse);
